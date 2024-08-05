@@ -1,0 +1,27 @@
+<form action="punto.php" method="post" class="form-cuerpo">
+        
+    <div class="form-grupo">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+    <div class="form-grupo">
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" class="form-control" id="apellido" name="apellido" required>
+    </div>
+    <div class="form-grupo">
+        <label for="correo">Correo:</label><br>
+        <input type="email" class="form-control" id="correo" name="correo" required>
+    </div>
+
+    
+    <div class="form-grupo">
+        <label for="contrasena">Contraseña:</label><br>
+        <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+    </div>
+
+    <input type="hidden" name="accion" value="2">
+
+    <button type="submit" class="form-btn submit">Ingresar</button>
+    <button type="reset" class="form-btn reset">Limpiar</button><br>
+  
+</form>

@@ -1,0 +1,36 @@
+version: '1'
+services:
+  frontend:
+    #build: ./frontend
+    image: php:8.2-apache
+    ports:
+      - "81:80"
+    volumes:  
+      - ./Frontend:/var/www/html
+
+
+  backend:
+    build: ./Backend
+    #image: php:8.2-apache
+    ports:
+      - "82:80"
+    volumes:
+      - ./Backend:/var/www/html
+
+  db:
+    image: mysql
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./DB/my.cnf:/etc/mysql/my.cnf
+      - ./DB/datos:/var/lib/mysql
+    environment:
+     MYSQL_DATABASE: mydb
+     MYSQL_ROOT_PASSWORD: root
+  
+
+
+
+
+
+
