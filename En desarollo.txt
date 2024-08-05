@@ -1,0 +1,7 @@
+perfil cliente:
+
+- Registrar cliente ✔
+- Login clienten ✔
+- Login Oaut cliente ❓
+- Verificar correo
+- Modificar cliente

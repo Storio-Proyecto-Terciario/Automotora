@@ -1,0 +1,20 @@
+<div class="form-cuerpo">
+    <form action="punto.php" method="post" >
+        <div class="form-grupo">
+            <label for="correo">Correo:</label><br>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+        </div>
+        <div class="form-grupo">
+            <label for="contrasena">Contraseña:</label><br>
+            <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+        </div>
+        <input type="hidden" name="accion" value="1">
+        <button type="submit" class="form-btn submit">Ingresar</button>
+        <button type="reset" class="form-btn reset">Limpiar</button><br>
+        
+        <hr><br>
+    
+    </form>
+    
+    <button class="form-btn google-btn"  onclick="location.href='http://localhost:81/google-oauth.php'" >Iniciar con Google</button>    
+</div>

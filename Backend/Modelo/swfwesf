@@ -1,0 +1,2 @@
+ $datos = array('error' => 'Usuario o contraseña incorrectos', 'op' => '1');
+            echo json_encode($datos);
